@@ -12,34 +12,41 @@
     <title>Color Picker</title>
 </head>
 <body>
-    <input id="colorSquare" type="color" />
-    <select name="color" id="colors">
-        <option value="monochrome">Monochrome</option>
-        <option value="monochrome-dark">Monochrome-dark</option>
-        <option value="monochrome-light">Monochrome-light</option>
-        <option value="analogic">Ananlogic</option>
-        <option value="complement">Complement</option>
-        <option value="analogic-complement">Analogic-Complement</option>
-        <option value="triad">Triad</option>
-        <option value="quad">Quad</option>
+    
+     <div class="main">
+        <header>
+            <input id="colorSquare" type="color" />
+            <select name="color" id="scheme">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Ananlogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
 
-    </select>
-    <button id="colorBtn">Show color scheme</button>
-    <div class="colorField">
-        <img class="colors" src="#" alt="">
-        <img class="colors" src="#" alt="">
-        <img class="colors" src="#" alt="">
-        <img class="colors" src="#" alt="">
-        <img class="colors" src="#" alt="">   
-    </div>
+            <button id="colorBtn">Show color scheme</button>
+        </header>    
 
-    <div>
-        <p>#1</p>
-        <p>#2</p>
-        <p>#3</p>
-        <p>#4</p>
-        <p>#5</p>
-    </div>
-
+        <div class="colorField">
+            <p class="colors" id="box1"></p>
+            <p class="colors" id="box2"></p>
+            <p class="colors" id="box3"></p>
+            <p class="colors" id="box4"></p>
+            <p class="colors" id="box5"></p>   
+        </div>
+    
+        <footer>
+            <div class="hexCode">
+                <p id="hex1">#FF0000</p>
+                <p id="hex2">#FFA500</p>
+                <p id="hex3">#FFFF00</p>
+                <p id="hex4">#00FF00</p>
+                <p id="hex5">#0000FF</p>
+            </div>
+    </footer>
+</div> <!--/ main-->
 </body>
 </html>
