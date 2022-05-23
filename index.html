@@ -15,8 +15,9 @@
     
      <div class="main">
         <header>
-            <input id="colorSquare" type="color" />
+            <input class="colorPicker" id="colorSquare" type="color" />
             <select name="color" id="scheme">
+                <option disabled selected value> -- select an option -- </option>
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
                 <option value="monochrome-light">Monochrome-light</option>
@@ -28,25 +29,15 @@
             </select>
 
             <button id="colorBtn">Show color scheme</button>
-        </header>    
 
-        <div class="colorField">
-            <p class="colors" id="box1"></p>
-            <p class="colors" id="box2"></p>
-            <p class="colors" id="box3"></p>
-            <p class="colors" id="box4"></p>
-            <p class="colors" id="box5"></p>   
-        </div>
-    
-        <footer>
-            <div class="hexCode">
-                <p id="hex1">#FF0000</p>
-                <p id="hex2">#FFA500</p>
-                <p id="hex3">#FFFF00</p>
-                <p id="hex4">#00FF00</p>
-                <p id="hex5">#0000FF</p>
-            </div>
-    </footer>
-</div> <!--/ main-->
+            <div id="displayColor"></div>
+        </header>    
+        
+          
+
+    </div> <!--/ main-->
+
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -1,107 +1,79 @@
 body{
-    margin: 0 auto;
+    padding-top: 5px;
+    max-height: 100vh;
     font-family: 'Inter', sans-serif;
-    background: rgb(21, 23, 21);
     font-weight: 500;
     font-size: .75rem;
+    padding: 0 5px;
+    background-color: #2B283A;
+    margin: 0 auto;
 }
 
 .main{
-    min-width: 500px;
-    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-header,
-footer{
-    background-color: #fff;
+header{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.colorPicker{
+    width: 5em;
     height: 5em;
-    width: auto;
-    
-}
-
-footer{
-    height: 4em;
-}
-
-#colorSquare{
-    width: 3em;
-    height: 2.5em;
     border: none;
+    cursor: pointer;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;    
 }
 
 #scheme{
-    padding: .5em;
-    border-radius: 5px;
-    margin: 1em .25em;
-    font-weight: 400;
-    font-size: .75rem;
-    border: 1px solid #D1D5DB;
-    width: 25.5em;
-    height: auto;
- 
+    width: 15em;
+    height: 2em;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 #colorBtn{
+    width: 175px;
+    height: 1.87em;
+    font-size: 1rem;
     cursor: pointer;
-    font-weight: 500;
-    font-size: .65rem;
-    border: 1px solid #D1D5DB;
-    padding: .80em;
-    border-radius: 5px;
-    margin: 1em .25em ;
-    line-height: 1em;
-    background: #fff;
-}
-
-.colors{
-    display: inline-block;
-    height: 25em;
-    width: 19.49%;
+    border: none;
     margin: 0;
-    padding: 0;
+   margin: 0 auto;
 }
 
-#box1{
-    background-color: #FF0000;
+.colorPicker,
+#scheme,
+#colorBtn{
+    margin-bottom: 10px;
 }
 
-#box2{
-    background-color: #FFA500;
-}
-
-#box3{
-    background-color: #FFFF00;
-}
-
-#box4{
-    background-color:#00FF00;
-}
-
-#box5{
-    background-color:#0000FF;
-}
-
-.hexCode{
-    color: #2B283A;
-    display: flex;
-
-}
-
-#hex1, 
-#hex2,
-#hex3,
-#hex4,
-#hex5 {
-    border: 1px white solid;
-    width: 5em;
-    margin-right: .32em;
-    padding: 1em .80em;
+.container{
     text-align: center;
-    font-weight: 500;
-    font-size: .59rem;
+    width: 320px;
 }
 
+.color{
+    display: flex;
+    height: 5em;
+    margin: 0 auto;
+    color: bisque;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayColor{
+   
+    margin: 0 auto;
+}
